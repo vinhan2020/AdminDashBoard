@@ -33,7 +33,7 @@ export default class Sidenav extends React.Component {
         <main style={{ marginTop: "56px" }}>
           <Switch>
             <Route path="/Admin/A">
-              <div>ahjkdhsajkdsahjdsahkj</div>
+              <div className="pok">ahjkdhsajkdsahjdsahkj</div>
             </Route>
 
             <Route path="/Admin/B">

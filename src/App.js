@@ -7,9 +7,8 @@ import Admin from "./Routes/Admin/Admin";
 function App() {
   return (
     <Router>
-
       <Switch>
-        
+
         <Route path="/Admin">
           <Admin />
         </Route>
@@ -19,7 +18,6 @@ function App() {
         </Route>
 
       </Switch>
-
     </Router>
   );
 }
