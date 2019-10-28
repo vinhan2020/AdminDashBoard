@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;4CAE4C;AAI5C,UAAU;EACT,gBAAgB,EAAE,uCAAuC;EACzD,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;;AAGvB,gBAAgB;EACf,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,KAAK;EAEb,wDAAuC;IACtC,WAAW,EAAE,YAAY",
+"sources": ["../../sass/pages/forgot.scss"],
+"names": [],
+"file": "forgot.css"
+}

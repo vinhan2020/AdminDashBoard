@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;4CAE4C;AAIpC,uCAA2B;EACvB,UAAU,EAAE,IAAI",
+"sources": ["../../sass/pages/cards-basic.scss"],
+"names": [],
+"file": "cards-basic.css"
+}

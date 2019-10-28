@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;4CAE4C;AAG5C,cAAe;EACd,KAAK,EAAE,GAAG;;AAEX,iBAAkB;EACjB,KAAK,EAAE,GAAG;;AAEX,mBAAoB;EACnB,OAAO,EAAE,IAAI",
+"sources": ["../../sass/pages/gallery.scss"],
+"names": [],
+"file": "gallery.css"
+}
