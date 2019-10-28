@@ -49,7 +49,7 @@ export default class CreateVoucher extends React.Component {
               <input type="submit" value="Tạo" className="btn btn-primary" />
             </div>
           </form>
-        </div>{" "}
+        </div>
       </div>
     );
   }
