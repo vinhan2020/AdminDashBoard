@@ -6,10 +6,10 @@ import Toolbar from "../SideNav/Toolbar/Toolbar";
 import CreateVoucher from "./CreateVoucher";
 import ManageRankPoin from "./ManageRankPoin";
 import Managesale from "./Managesale";
-import CreateSale from "./CreateSale"
-import RankRule from "./RankRule"
-import PoinRule from "./PoinRule"
- 
+import CreateSale from "./CreateSale";
+import RankRule from "./RankRule";
+import PoinRule from "./PoinRule";
+
 export default class Sidenav extends React.Component {
   state = {
     sideDrawer: false
@@ -39,27 +39,27 @@ export default class Sidenav extends React.Component {
         <main style={{ marginTop: "56px" }}>
           <Switch>
             <Route path="/Admin/managerankpoin">
-              <ManageRankPoin/>
+              <ManageRankPoin />
             </Route>
 
             <Route path="/Admin/createvoucher">
-              <CreateVoucher/>
+              <CreateVoucher />
             </Route>
 
             <Route path="/Admin/Managesale">
-              <Managesale/>
+              <Managesale />
             </Route>
 
             <Route path="/Admin/createsale">
-              <CreateSale/>
+              <CreateSale />
             </Route>
 
             <Route path="/Admin/rankrule">
-              <RankRule/>
+              <RankRule />
             </Route>
 
             <Route path="/Admin/poinrule">
-              <PoinRule/>
+              <PoinRule />
             </Route>
           </Switch>
         </main>
@@ -79,11 +79,16 @@ const SideDrawer = props => {
   }
   return (
     <nav className={DrawerClass}>
-    
       <ul>
-      <div>
-        <img alt="" height="40px" width="200px" style={{marginBottom: "45px", marginTop: "40px"}} src="https://assets.grab.com/wp-content/uploads/sites/10/2018/10/09151516/GrabRewards.png"/>
-      </div>
+        <div>
+          <img
+            alt=""
+            height="40px"
+            width="200px"
+            style={{ marginBottom: "45px", marginTop: "40px" }}
+            src="https://assets.grab.com/wp-content/uploads/sites/10/2018/10/09151516/GrabRewards.png"
+          />
+        </div>
         <li>
           <a href="/Admin/managerankpoin">Quản lý hạng điểm (Passenger)</a>
         </li>
@@ -102,7 +107,6 @@ const SideDrawer = props => {
         <li>
           <a href="/Admin/createsale">Tạo ưu đãi</a>
         </li>
-         
       </ul>
     </nav>
   );

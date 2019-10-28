@@ -17,11 +17,12 @@ export class Managesale extends Component {
   }
 
   delete(id) {
-    axios.get("http://localhost:4000/vouchers/delete/" + id)
+    axios
+      .get("http://localhost:4000/vouchers/delete/" + id)
       .then(console.log("Deleted"))
       .catch(err => console.log(err));
 
-    this.componentDidMount()
+    this.componentDidMount();
   }
 
   tabRow() {
