@@ -9,6 +9,7 @@ import Managesale from "./Managesale";
 import CreateSale from "./CreateSale";
 import RankRule from "./RankRule";
 import PoinRule from "./PoinRule";
+import EditVoucher from './EditVoucher'
 
 export default class Sidenav extends React.Component {
   state = {
@@ -61,6 +62,12 @@ export default class Sidenav extends React.Component {
             <Route path="/Admin/poinrule">
               <PoinRule />
             </Route>
+
+            <Route path="/Admin/Voucher/Edit/:id" component = {EditVoucher}/>
+              
+            
+
+
           </Switch>
         </main>
       </div>
@@ -82,10 +89,7 @@ const SideDrawer = props => {
       <ul>
         <div>
           <img
-            alt=""
-            height="40px"
-            width="200px"
-            style={{ marginBottom: "45px", marginTop: "40px" }}
+            alt="" height="40px" width="200px" style={{ marginBottom: "45px", marginTop: "40px" }}
             src="https://assets.grab.com/wp-content/uploads/sites/10/2018/10/09151516/GrabRewards.png"
           />
         </div>

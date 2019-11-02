@@ -31,7 +31,7 @@ voucherRoutes.route("/").get((req, res) => {
 // Defined edit route
 voucherRoutes.route("/edit/:id").get(function(req, res) {
   let id = req.params.id;
-  voucher.findById(id, (err, business) => {
+  Voucher.findById(id, (err, business) => {
     res.json(business);
   });
 });

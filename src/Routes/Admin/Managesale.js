@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import {Link} from 'react-router-dom'
 
 export class Managesale extends Component {
   state = { vouchers: [] };
@@ -30,8 +31,11 @@ export class Managesale extends Component {
       return (
         <tr key={i}>
           <td>{object.name}</td>
+          <td>{object.datestart}</td>
+          <td>{object.dateend}</td>
+          <td>{object.dateend}</td>
           <td>
-            <button className="btn btn-primary">Edit</button>
+            <Link to={"/Admin/Voucher/Edit/"+object._id}> Edit</Link>
           </td>
           <td>
             <button
@@ -56,6 +60,9 @@ export class Managesale extends Component {
           <thead>
             <tr>
               <th>Name</th>
+              <th>DateStart</th>
+              <th>DateEnd</th>
+              <th>Giá trị</th>
               <th colSpan="2">Action</th>
             </tr>
           </thead>
