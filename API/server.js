@@ -5,7 +5,8 @@ const PORT = 4000;
 const cors = require("cors");
 const mongoose = require("mongoose");
 const config = require("./DB");
-const vouchersRoute = require("./voucher.route");
+const vouchersRoute = require("./Voucher/voucher.route");
+const GiftRoute = require("./Gift/gift.route");
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -23,7 +24,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use("/vouchers", vouchersRoute);
+app.use("/gifts",GiftRoute)
 
 app.listen(PORT, function() {
   console.log("Server is running on Port:", PORT);
 });
+

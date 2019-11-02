@@ -43,6 +43,9 @@ voucherRoutes.route("/update/:id").post((req, res) => {
     else {
       console.log(voucher);
       voucher.name = req.body.name;
+      voucher.datestart = req.body.datestart
+      voucher.dateend = req.body.dateend
+      voucher.value = req.body.value
 
       voucher
         .save()

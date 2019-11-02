@@ -5,6 +5,7 @@ export default class CreateVoucher extends React.Component {
     super(props);
     this.onChangeName = this.onChangeName.bind(this);
     this.onChangeDateend = this.onChangeDateend.bind(this);
+    this.onChangeValue = this.onChangeValue.bind(this)
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
@@ -26,6 +27,12 @@ export default class CreateVoucher extends React.Component {
     //console.log(e)
   }
 
+  onChangeValue(e){
+    this.setState({
+      value : e.target.value
+    })
+  }
+
   onSubmit(e) {
     e.preventDefault();
 
@@ -40,8 +47,8 @@ export default class CreateVoucher extends React.Component {
       .then(res => console.log(res.data));
     this.setState({
       name: "",
-      dateend : new Date(),
-      value :0
+      dateend : Date,
+      value :Number
     });
     alert('tạo thành công')
   }
@@ -66,10 +73,21 @@ export default class CreateVoucher extends React.Component {
               <input
                 type="date"
                 className="form-control"
-                value={this.state.dateend}
+                //value={this.state.dateend}
                 onChange={this.onChangeDateend}
               />
             </div>
+
+            <div className="form-group">
+              <label>Giá trị </label>
+              <input
+                type="number"
+                className="form-control"
+                value={this.state.value}
+                onChange={this.onChangeValue}
+              />
+            </div>
+
             <div className="form-group">
               <input type="submit" value="Tạo" className="btn btn-primary" />
             </div>

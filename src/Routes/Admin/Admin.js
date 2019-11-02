@@ -3,13 +3,13 @@ import { Switch, Route } from "react-router-dom";
 
 import "./Admin.css";
 import Toolbar from "../SideNav/Toolbar/Toolbar";
-import CreateVoucher from "./CreateVoucher";
+import CreateVoucher from "./Voucher/CreateVoucher";
 import ManageRankPoin from "./ManageRankPoin";
 import Managesale from "./Managesale";
 import CreateSale from "./CreateSale";
 import RankRule from "./RankRule";
 import PoinRule from "./PoinRule";
-import EditVoucher from './EditVoucher'
+import EditVoucher from './Voucher/EditVoucher'
 
 export default class Sidenav extends React.Component {
   state = {

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Signin from "./Routes/Singin/Signin";
 import Admin from "./Routes/Admin/Admin";
-import CreateVoucher from "./Routes/Admin/CreateVoucher";
+import CreateVoucher from "./Routes/Admin/Voucher/CreateVoucher";
 
 import ManageRankPoin from "./Routes/Admin/ManageRankPoin";
 import Managesale from "./Routes/Admin/Managesale";

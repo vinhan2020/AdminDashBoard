@@ -33,7 +33,7 @@ export class Managesale extends Component {
           <td>{object.name}</td>
           <td>{object.datestart}</td>
           <td>{object.dateend}</td>
-          <td>{object.dateend}</td>
+          <td>{object.value}</td>
           <td>
             <Link to={"/Admin/Voucher/Edit/"+object._id}> Edit</Link>
           </td>
