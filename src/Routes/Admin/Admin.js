@@ -63,7 +63,7 @@ export default class Sidenav extends React.Component {
               <PoinRule />
             </Route>
 
-            <Route path="/Admin/Voucher/Edit/:id" component = {EditVoucher}/> 
+            <Route path="/Admin/Voucher/Edit/:id" component={EditVoucher} />
           </Switch>
         </main>
       </div>
