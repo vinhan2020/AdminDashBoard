@@ -4,9 +4,18 @@ export class PoinRule extends Component {
     render() {
         return (
             <div>
-                <h1>
-                    Tạo quy tắc điểm thướng
-                </h1>
+                <h3 align="center">Rule List</h3>
+                <table className="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Tên quy tắc
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                </table>
             </div>
         );
     }

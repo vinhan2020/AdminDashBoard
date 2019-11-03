@@ -11,7 +11,7 @@ const Toolbar = props => (
         <DrawerToggleButton click={props.drawerClickHandler} />
       </div>
       <div className="toolbar__logo">
-        <a href="/">Grab Reward</a>
+        <a href="/">Waza Reward</a>
       </div>
 
       <div className="spacer"></div>

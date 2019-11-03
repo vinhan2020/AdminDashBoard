@@ -63,11 +63,7 @@ export default class Sidenav extends React.Component {
               <PoinRule />
             </Route>
 
-            <Route path="/Admin/Voucher/Edit/:id" component = {EditVoucher}/>
-              
-            
-
-
+            <Route path="/Admin/Voucher/Edit/:id" component = {EditVoucher}/> 
           </Switch>
         </main>
       </div>
@@ -97,7 +93,7 @@ const SideDrawer = props => {
           <a href="/Admin/managerankpoin">Quản lý hạng điểm (Passenger)</a>
         </li>
         <li>
-          <a href="/Admin/managesale">Quản lý ưu đãi</a>
+          <a href="/Admin/managesale">Quản lý vouchers</a>
         </li>
         <li>
           <a href="/Admin/poinrule">Quy tắc điểm thưởng tài xế</a>
